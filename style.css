@@ -1,0 +1,334 @@
+body {
+  font-family: "Source Sans 3", sans-serif;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.section-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+}
+
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: #fff;
+}
+.banner a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.fadeIn {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.slideInLeft {
+  animation: slideInLeft 2s ease-in-out;
+}
+
+.slideInRight {
+  animation: slideInRight 2s ease-in-out;
+}
+
+.navigation-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(52, 152, 219, 0.7);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 24px;
+  transition: background-color 0.3s, transform 0.3s, opacity 0.3s;
+  z-index: 1;
+}
+
+.navigation-button:hover {
+  background-color: rgba(41, 128, 185, 0.9);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.founder-section {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.founder-image {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  animation: scaleIn 1.5s ease-in-out;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.about-company {
+  text-align: center;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+  margin-top: 90px;
+}
+
+.about-founder {
+  flex: 1;
+  text-align: center;
+}
+
+.card {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  width: 300px;
+  height: 190px;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22),
+    0 5px 14px 0 rgba(0, 0, 0, 0.18);
+}
+
+.founder-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.spacing-1 {
+  letter-spacing: 1px;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.founder-card {
+  margin-inline: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.my-10 {
+  margin-block: 2.5rem;
+}
+
+.my-16 {
+  margin-block: 4rem;
+}
+
+.py-16 {
+  padding-block: 4rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.px-28 {
+  padding-inline: 7rem;
+}
+
+.px-52 {
+  padding-inline: 13rem;
+}
+
+.bottom-banner {
+  margin-bottom: 10px;
+}
+
+.bottom-banner a {
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.bottom-banner a:hover {
+  color: #3498db;
+}
+
+.address-box {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.mx-auto {
+  margin-inline: auto;
+}
+
+.py-10 {
+  padding-block: 2.5rem;
+}
+
+.career-card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: #fff;
+}
